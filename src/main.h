@@ -39,8 +39,8 @@ static const int64_t MAX_MONEY = 221 * COIN;
 static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% per year
 static const int64_t MAX_MINT_PROOF_OF_STAKE = 0.01 * COIN;	// 10% annual interest
 
-#define FOUNDATION ""
-#define FOUNDATION_TEST ""
+#define FOUNDATION "2FhFbfYEFuPoaF7RMqJaoYyo5FthGTYHqX"
+#define FOUNDATION_TEST "2FhFbfYEFuPoaF7RMqJaoYyo5FthGTYHqX"
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 // Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp.
@@ -59,6 +59,9 @@ static const uint256 CheckBlock1 ("000000badc86548030eaf8f14b6d87dc12da365b5c7c1
 static const uint256 CheckBlock2 ("000000f9cc384b7b34e4864657185d1f63f7a3dee2e2f56f2ac05174171c45e4"); // Checkpoint at block 2
 static const uint256 CheckBlock3 ("000000751a598f357f9a03cbf35546cf82fa9344634834253510229987ec4a67"); // Checkpoint at block 3
 static const uint256 CheckBlock4 ("000000060edd0d26e0150b86f8fb754c6f5a555523f0b5cba66ed69e11bbecf6"); // Checkpoint at block 4
+static const uint256 CheckBlock5 ("00000004e319b7e8f8bf05941f2b42307978b203b895465aa390cb375f8d28fe"); // Checkpoint at block 100
+static const uint256 CheckBlock6 ("000000001ca8c33000e792924f0b4b294ed12c777a4e97cba1627dcd13afe0ff"); // Checkpoint at block 300
+static const uint256 CheckBlock7 ("0000000037f41b2319e4af279d8e9246b484d979170a4458fcce864677dbc228"); // Checkpoint at block 640
 
 inline int64_t PastDrift(int64_t nTime)   { return nTime - 24 * 60 * 60; } // up to 1 day from the past
 inline int64_t FutureDrift(int64_t nTime) { return nTime + 24 * 60 * 60; } // up to 1 day from the future
