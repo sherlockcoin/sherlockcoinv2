@@ -39,8 +39,8 @@ static const int64_t MAX_MONEY = 221 * COIN;
 static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% per year
 static const int64_t MAX_MINT_PROOF_OF_STAKE = 0.01 * COIN;	// 10% annual interest
 
-#define FOUNDATION ""
-#define FOUNDATION_TEST ""
+#define FOUNDATION "2FhFbfYEFuPoaF7RMqJaoYyo5FthGTYHqX"
+#define FOUNDATION_TEST "2FhFbfYEFuPoaF7RMqJaoYyo5FthGTYHqX"
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 // Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp.
